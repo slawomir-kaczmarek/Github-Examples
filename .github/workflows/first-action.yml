@@ -1,0 +1,16 @@
+name: My first action
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  current_date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Show the current date"
+        run: |
+          echo "The current date is $(date)"
+
+
+        
